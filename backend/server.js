@@ -12,7 +12,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(cors(
-    {origin: ["http://localhost:3000", "https://airelsbuddy.onrender.com"]
+    {origin: ["http://localhost:3000", "https://tustracker.onrender.com""]
 }))
 app.use("/api/times", timeRoutes)
 app.use("/api/tasks", taskRoutes)
